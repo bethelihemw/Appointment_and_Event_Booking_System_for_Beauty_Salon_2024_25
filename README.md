@@ -1,4 +1,4 @@
-# Blossom:Appointment and Event Booking System for Beauty Salons
+Appointment and Event Booking System for Beauty Salons
 
 | Full Name               | ID           |
 |-------------------------|--------------|
