@@ -1,13 +1,17 @@
-import { Schema, Document } from 'mongoose';
 
-export const AppointmentSchema = new Schema({
-  clientName: String,
-  service: String,
-  appointmentDate: Date,
-});
+import { Schema as MongooseSchema, Prop, SchemaFactory } from '@nestjs/mongoose';
+import { Document } from 'mongoose';
 
-export interface Appointment extends Document {
+@MongooseSchema()
+export class Appointment extends Document {
+  @Prop({ required: true })
   clientName: string;
+
+  @Prop({ required: true })
   service: string;
+
+  @Prop({ required: true })
   appointmentDate: Date;
 }
+
+export const AppointmentSchema = SchemaFactory.createForClass(Appointment);
