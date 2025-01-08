@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Appointment } from './schemas/appointment.schema';
+import { Appointment } from './schemas/appointment.schema';  
 
 @Injectable()
 export class AppointmentsService {
   constructor(
-    @InjectModel(Appointment.name) private appointmentModel: Model<Appointment>,
+    @InjectModel(Appointment.name) private appointmentModel: Model<Appointment>,  
   ) {}
 
   async create(appointmentDto: any): Promise<Appointment> {
@@ -30,3 +30,4 @@ export class AppointmentsService {
     await this.appointmentModel.findByIdAndDelete(id).exec();
   }
 }
+

@@ -2,15 +2,15 @@ import { Module } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { JwtModule } from '@nestjs/jwt';
-import { UserModule } from '../user/user.module';
+import { UsersModule } from '../user/user.module';
 import { PassportModule } from '@nestjs/passport';
 
 @Module({
   imports: [
-    UserModule,
+    UsersModule,
     PassportModule,
     JwtModule.register({
-      secret: 'your-secret-key', // change this to a secure secret key
+      secret: 'your-secret-key', 
       signOptions: { expiresIn: '60m' },
     }),
   ],
