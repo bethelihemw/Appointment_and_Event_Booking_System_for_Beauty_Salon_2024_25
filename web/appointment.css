@@ -54,16 +54,16 @@ body {
 }
 
 .btn {
-    background-color: #ff6b6b;
+    background-color: #e43a8f;
     color: #fff;
-    border: none;
+    border: 1px solid #e43a8f;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 10px;
 }
 
 .btn:hover {
-    background-color: #ff4c4c;
+    background-color: #e43a8f;
 }
 
 .sidebar {

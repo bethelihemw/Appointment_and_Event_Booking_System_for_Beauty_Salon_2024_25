@@ -17,11 +17,13 @@
         </div>
         <ul class="d-flex list-unstyled gap-4 mb-0">
             <li><a id="home" href="index.html"
-                    class="text-decoration-none text-danger border-bottom border-danger border-3">Home</a></li>
+                class="text-decoration-none" style="color:white"
+                onmouseover="this.style.color='rgb(228, 58, 143)'"
+                onmouseout="this.style.color='white'">Home</a></li>
             <li><a id="services" href="service.html" class="text-decoration-none" style="color:white"
                     onmouseover="this.style.color='rgb(228, 58, 143)'"
                     onmouseout="this.style.color='white'">Services</a></li>
-            <li><a id="Appointments" href="#" class="text-decoration-none" style="color:white"
+            <li><a id="Appointments" href="appointment.html" class="text-decoration-none text-danger border-bottom border-danger border-3"
                     onmouseover="this.style.color='rgb(228, 58, 143)'"
                     onmouseout="this.style.color='white'">Appointments</a></li>
             <li><a id="events" href="event.html" class="text-decoration-none" style="color:white"
@@ -29,8 +31,8 @@
             </li>
         </ul>
         <div class="buttons d-flex gap-2">
-            <button class="btn text-white px-4 py-2" style="background-color: rgb(228, 58, 143); border-radius: 5px;"
-                onmouseover="this.style.backgroundColor='#d1440f'"
+            <button class="btn text-white px-4 py-2" style="background-color: #e43a8f; border-radius: 5px;"
+                onmouseover="this.style.backgroundColor='#850746'"
                 onmouseout="this.style.backgroundColor='rgb(228, 58, 143)'">Log Out</button>
         </div>
     </nav>
@@ -38,12 +40,11 @@
     <div class="row g-0">
         <!-- Sidebar -->
         <aside class="sidebar col-md-3">
-            <button class="btn sidebar-btn" id="addButton" onclick="showAddAppointment()"><img src="" alt="">Add
+            <button class="btn sidebar-btn" id="addButton" onclick="showAddAppointment()">Add
                 Appointment</button>
-            <button class="btn sidebar-btn transparent-btn" id="editButton" onclick="showEditAppointments()"><img
-                    src="">Edit Appointment</button>
-            <button class="btn sidebar-btn"><img src="" alt="">Delete Appointment</button>
-            <button class="btn sidebar-btn transparent-btn"><img src="" alt="">View Appointments</button>
+            <button class="btn sidebar-btn transparent-btn" id="editButton" onclick="showEditAppointments()">Edit Appointment</button>
+            <!-- <button class="btn sidebar-btn transparent-btn">Delete Appointment</button> -->
+            <button class="btn sidebar-btn transparent-btn" id="viewButton" onclick="showAppointment()">View Appointments</button>
         </aside>
 
         <!-- Appointment Form -->

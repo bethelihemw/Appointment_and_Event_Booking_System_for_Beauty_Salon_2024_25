@@ -86,15 +86,38 @@ const appointments = [];  // Array to store appointments
 function showAddAppointment() {
     document.getElementById("addAppointmentSection").style.display = "block";
     document.getElementById("editAppointmentSection").style.display = "none";
+    document.getElementById("editButton").style.backgroundColor = "black";
+    document.getElementById("addButton").style.backgroundColor = "#e43a8f";
+    document.getElementById("addButton").style.color = "white";
+    document.getElementById("editButton").style.color = "#ff6b6b";
+    document.getElementById("editButton").style.borderWidth = "1px";
+    document.getElementById("editButton").style.borderStyle = "solid";
+    document.getElementById("editButton").style.borderColor = "#ff6b6b";
 }
 
 // Show Edit Appointment Section
 function showEditAppointments() {
     document.getElementById("addAppointmentSection").style.display = "none";
     document.getElementById("editAppointmentSection").style.display = "block";
-
+    document.getElementById("editButton").style.backgroundColor = "#e43a8f";
+    document.getElementById("editButton").style.color = "white";
+    document.getElementById("addButton").style.backgroundColor = "black";
+    document.getElementById("addButton").style.color = "#ff6b6b";
+    document.getElementById("addButton").style.borderWidth = "1px";
+    document.getElementById("addButton").style.borderStyle = "solid";
+    document.getElementById("addButton").style.borderColor = "#ff6b6b";
     populateAppointmentsTable();
+
 }
+// function showAppointments() {
+//     document.getElementById("editButton").style.backgroundColor = "#ff6b6b";
+//     document.getElementById("addButton").style.backgroundColor = "black";
+//     document.getElementById("addButton").style.borderWidth = "1px";
+//     document.getElementById("addButton").style.borderStyle = "solid";
+//     document.getElementById("addButton").style.borderColor = "#ff6b6b";
+//     document.getElementById("viewButton").style.backgroundColor = "#ff6b6b";
+//     document.getElementById("viewButton").style.color = "white";  
+// }
 
 // Add Appointment
 document.getElementById("addAppointmentForm").addEventListener("submit", function (event) {
