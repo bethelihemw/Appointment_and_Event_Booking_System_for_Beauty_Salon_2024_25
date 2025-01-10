@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointments</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="appointments.css">
     <style>
-      
+
     </style>
 </head>
 
@@ -18,15 +18,15 @@
     <nav class="container d-flex justify-content-between align-items-center py-3">
         <div class="logos d-flex align-items-center">
             <img src="image/logo.jpg" alt="Blossom Logo" class="me-2" style="width: 50px; border-radius: 50%;">
-            <!-- <div class="logo fs-4 fw-bold" style="font-family: 'Playfair Display', serif;">Blossom</div> -->
+            <!--  <div class = "logo fs-4 fw-bold" style = "font-family: 'Playfair Display', serif;">Blossom</div> -->
         </div>
         <ul class="d-flex list-unstyled gap-4 mb-0">
-            <li><a id="home" href="index.html"
-                    class="text-decoration-none" style="color: white;">Home</a></li>
+            <li><a id="home" href="index.html" class="text-decoration-none" style="color: white;">Home</a></li>
             <li><a id="services" href="service.html" class="text-decoration-none" style="color:white"
                     onmouseover="this.style.color='rgb(228, 58, 143)'"
                     onmouseout="this.style.color='white'">Services</a></li>
-            <li><a id="Appointments" href="appointment.html" class="text-decoration-none text-danger border-bottom border-danger border-3" style="color:white"
+            <li><a id="Appointments" href="appointment.html"
+                    class="text-decoration-none text-danger border-bottom border-danger border-3" style="color:white"
                     onmouseover="this.style.color='rgb(228, 58, 143)'"
                     onmouseout="this.style.color='white'">Appointments</a></li>
             <li><a id="events" href="event.html" class="text-decoration-none" style="color:white"
@@ -39,8 +39,8 @@
                 onmouseout="this.style.backgroundColor='rgb(228, 58, 143)'">Log Out</button>
         </div>
     </nav>
-    <div class="container my-5" >
-        <h1 class="text-center mb-4" > <span style="color: #cb0f64;">Blossom</span>  Salon Scheduler</h1>
+    <div class="container my-5">
+        <h1 class="text-center mb-4"> <span style="color: #cb0f64;">Blossom</span> Salon Scheduler</h1>
         <!-- Appointments List -->
         <div class="mb-4">
             <h2>Appointments</h2>
@@ -68,25 +68,31 @@
             <form id="addAppointmentForm">
                 <div class="mb-3">
                     <label for="customerName" class="form-label">Customer Name</label>
-                    <input style="width: 50vw; border-color: #cb0f64;" type="text" class="form-control" id="customerName" required>
+                    <input style="width: 50vw; border-color: #cb0f64;" type="text" class="form-control"
+                        id="customerName" required>
                 </div>
                 <div class="mb-3">
                     <label for="service" class="form-label">Service</label>
-                    <input style="width: 50vw;  border-color: #cb0f64;"  type="text" class="form-control" id="service" required>
+                    <input style="width: 50vw;  border-color: #cb0f64;" type="text" class="form-control" id="service"
+                        required>
                 </div>
                 <div class="mb-3">
                     <label for="date" class="form-label">Date</label>
-                    <input style="width: 50vw;  border-color: #cb0f64;"  type="date" class="form-control" id="date" required>
+                    <input style="width: 50vw;  border-color: #cb0f64;" type="date" class="form-control" id="date"
+                        required>
                 </div>
                 <div class="mb-3">
                     <label for="time" class="form-label">Time</label>
-                    <input style="width: 50vw; border-color: #cb0f64;"  type="time" class="form-control" id="time" required>
+                    <input style="width: 50vw; border-color: #cb0f64;" type="time" class="form-control" id="time"
+                        required>
                 </div>
                 <div class="mb-3">
                     <label for="stylist" class="form-label">Stylist</label>
-                    <input style="width: 50vw; border-color: #cb0f64;"  type="text" class="form-control" id="stylist" required>
+                    <input style="width: 50vw; border-color: #cb0f64;" type="text" class="form-control" id="stylist"
+                        required>
                 </div>
-                <button type="submit" class="btn btn-primary" style="background-color: #cb0f64; border: none;">Add Appointment</button>
+                <button type="submit" class="btn btn-primary" style="background-color: #cb0f64; border: none;">Add
+                    Appointment</button>
             </form>
         </div>
     </div>
