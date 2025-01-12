@@ -7,28 +7,44 @@
     <title>Login</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #username::placeholder,
+        #password::placeholder {
+            color: #ffffff78;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 
 <body class="bg-black d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div class="card shadow p-4" style="width: 400px; background-color: transparent;">
-        <h3 class="text-center mb-4" style="color: #ffffff;">Login</h3>
-        <form id="loginForm">
-            <div class="mb-3">
-                <label for="username" class="form-label" style="color: #ffffff; font-weight: bold;">Username</label>
-                <input  style="border: 1px solid #cb0f64; background-color: transparent;"  type="text" class="form-control" id="username" placeholder="Enter your username" required>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label" style="color: #ffffff; font-weight: bold;">Password</label>
-                <input style="border: 1px solid #cb0f64; background-color: transparent;" type="password" class="form-control" id="password" placeholder="Enter your password" required>
-            </div>
-            <button type="submit" class="btn btn-primary w-100" style="background-color: #cb0f64; border: none;">Login</button>
-        </form>
-        <div id="message" class="mt-3 text-center text-danger"></div>
+    <div style="display: flex; gap: 50px;">
+        <div style="display: flex; align-items: center; justify-content: start;">
+            <h1 style="color: #cb0f64; font-size: 120px;"> WelCome!</h1>
+        </div>
+        <div class="card shadow p-4" style="width: 400px; background-color: transparent;">
+            <h3 class="text-center mb-4" style="color: #ffffff;">Login</h3>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="username" class="form-label" style="color: #ffffff; font-weight: bold;">Username</label>
+                    <input style="border: 1px solid #cb0f64; background-color: transparent; color: #ffffff;" type="text"
+                        class="form-control" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label" style="color: #ffffff; font-weight: bold;">Password</label>
+                    <input style="border: 1px solid #cb0f64; background-color: transparent; color: #ffffff;"
+                        type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100"
+                    style="background-color: #cb0f64; border: none;">Login</button>
+            </form>
+            <div id="message" class="mt-3 text-center text-danger"></div>
+        </div>
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Your custom JavaScript -->
+    <!-- <script src = "login.js"></script> -->
     <script src="login.js"></script>
 </body>
 

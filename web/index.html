@@ -7,56 +7,57 @@
     <title>Blossom</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <style>
+    <style>
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 22px;
+        }
+
+        .hamburger .bar {
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #333;
+        }
+
+        /* Hide the menu for small screens initially */
+        .navmenu {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .navmenu li {
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 700px) {
+
+            /* Show hamburger menu */
             .hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 22px;
-}
+                display: flex;
+            }
 
-.hamburger .bar {
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-}
+            /* Initially hide the navigation */
+            .navmenu {
+                display: none;
+                flex-direction: column;
+                background-color: #fff;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                right: 0;
+            }
 
-/* Hide the menu for small screens initially */
-.navmenu {
-    display: flex;
-    list-style-type: none;
-}
-
-.navmenu li {
-    margin: 10px;
-}
-
-@media screen and (max-width: 700px) {
-    /* Show hamburger menu */
-    .hamburger {
-        display: flex;
-    }
-
-    /* Initially hide the navigation */
-    .navmenu {
-        display: none;
-        flex-direction: column;
-        background-color: #fff;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        right: 0;
-    }
-
-    /* Show the navigation when toggled */
-    .navmenu.active {
-        display: flex;
-    }
-}
-        </style>
+            /* Show the navigation when toggled */
+            .navmenu.active {
+                display: flex;
+            }
+        }
+    </style>
 
 </head>
 
@@ -76,9 +77,6 @@
             <li><a id="Appointments" href="appointment.html" class="text-decoration-none" style="color:white"
                     onmouseover="this.style.color='rgb(228, 58, 143)'"
                     onmouseout="this.style.color='white'">Appointments</a></li>
-            <li><a id="events" href="event.html" class="text-decoration-none" style="color:white"
-                    onmouseover="this.style.color='rgb(228, 58, 143)'" onmouseout="this.style.color='white'">Events</a>
-            </li>
         </ul>
         <div class="buttons d-flex gap-2" id="logout">
             <button class="btn text-white px-4 py-2" style="background-color: #e43a8f; border-radius: 5px;"
